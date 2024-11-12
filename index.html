@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Library Management System</h1>
+        
+        <section class="form-section">
+            <h2>Add Book</h2>
+            <div class="form-group">
+                <input type="text" id="bookTitle" placeholder="Book Title" required>
+                <input type="text" id="bookAuthor" placeholder="Author" required>
+                <button class="btn" onclick="addBook()">Add Book</button>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Register Member</h2>
+            <div class="form-group">
+                <input type="text" id="memberName" placeholder="Member Name" required>
+                <button class="btn" onclick="registerMember()">Register Member</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Available Books</h2>
+            <ul id="availableBooks" class="book-list"></ul>
+        </section>
+
+        <section class="form-section">
+            <h2>Borrow Book</h2>
+            <div class="form-group">
+                <input type="text" id="borrowMember" placeholder="Member Name" required>
+                <input type="text" id="borrowBookTitle" placeholder="Book Title" required>
+                <button class="btn" onclick="borrowBook()">Borrow Book</button>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Return Book</h2>
+            <div class="form-group">
+                <input type="text" id="returnMember" placeholder="Member Name" required>
+                <input type="text" id="returnBookTitle" placeholder="Book Title" required>
+                <button class="btn" onclick="returnBook()">Return Book</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Borrowed Books</h2>
+            <ul id="borrowedBooks" class="book-list"></ul>
+        </section>
+
+        <section>
+            <h2>Members</h2>
+            <ul id="membersList" class="member-list"></ul>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+d
